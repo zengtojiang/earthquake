@@ -54,7 +54,6 @@
     [UIApplication sharedApplication].statusBarHidden=NO;
     self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
     // Override point for customization after application launch.
-    
     self.viewController = [[[ZLRootViewController alloc] init] autorelease];
     self.viewController.managedObjectContext = self.managedObjectContext;
     self.navigationController=[[[UINavigationController alloc] initWithRootViewController:self.viewController] autorelease];

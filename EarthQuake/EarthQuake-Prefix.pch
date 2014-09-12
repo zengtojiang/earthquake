@@ -1,0 +1,82 @@
+//
+// Prefix header for all source files of the 'EarthQuake' target in the 'EarthQuake' project
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_4_0
+#warning "This project uses features only available in iOS SDK 4.0 and later."
+#endif
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+    #import<CoreData/CoreData.h>
+    #import <MapKit/MapKit.h>
+#endif
+
+//系统是否为ios7以上
+#define ISIOS7 !([[[UIDevice currentDevice] systemVersion] floatValue] <=6.9f)
+
+//状态栏高度
+#define  HS_STATUSBAR_HEIGHT  20.0f
+//ios7状态栏偏移量
+#define  IOS7_STATUSBAR_DELTA   (ISIOS7?(HS_STATUSBAR_HEIGHT):0)
+
+//判断是否是iPhone5
+#define iPhone5 ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(640, 1136), [[UIScreen mainScreen] currentMode].size) : NO)
+
+
+#define ZLDEBUG
+
+#undef ZLDEBUG
+
+#ifdef ZLDEBUG
+#define ZLTRACE(fmt, ...) NSLog((@"%s [Line %d] " fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__);
+#else
+#define ZLTRACE(...) do { } while (0)
+#endif
+
+
+#define ZLSCREEN_WIDTH  [UIScreen mainScreen].bounds.size.width
+
+//#define ZLSCREEN_WIDTH  [UIScreen mainScreen].bounds.size.width
+
+//#define ZL_BG_COLOR  [UIColor colorWithRed:77.0/255.0 green:187.0/255.0 blue:255.0/255.0 alpha:1.0]
+
+#define ZL_BG_COLOR  [UIColor colorWithRed:107.0/255.0f green:137.0/255.0f blue:225.0/255.0f alpha:1.0f]
+
+#define ZL_TEXT_COLOR  [UIColor whiteColor]//[UIColor colorWithRed:148.0/255.0 green:155.0/255.0 blue:142.0/255.0 alpha:1.0]
+
+#define ZL_OVERLAY_COLOR [UIColor colorWithRed:107.0/255.0f green:137.0/255.0f blue:225.0/255.0f alpha:.5f]//[UIColor colorWithRed:128.0/255.0 green:105.0/255.0 blue:44.0/255.0 alpha:.5]
+
+#define ZL_BAR_COLOR     [UIColor colorWithRed:107.0/255.0f green:137.0/255.0f blue:225.0/255.0f alpha:1.0f]// [UIColor colorWithRed:148.0/255.0 green:135.0/255.0 blue:112.0/255.0 alpha:.8]
+
+#define ZL_IOS6  ([[[UIDevice currentDevice] systemVersion] floatValue]>=6.0f)
+
+#define ZL_IOS5  ([[[UIDevice currentDevice] systemVersion] floatValue]>=5.0f)
+
+#define ZL_ATTENTIONS_CHANGE_NOTIFICATION @"ZL_ATTENTIONS_CHANGE_NOTIFICATION"
+
+#define     ZL_BIG_FONT_SIZE   22
+#define     ZL_MIDDLE_FONT_SIZE  18
+#define     ZL_SMALL_FONT_SIZE   13
+
+#define    SCREEN_WIDTH   320
+
+#define     ZL_DEFAULT_FONT_NAME  @"ChalkboardSE-Regular"
+
+
+#define HEXCOLOR(rgbValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
+
+
+//表头高度
+#define     ZL_HEADVIEW_HEIGHT   (IOS7_STATUSBAR_DELTA+44)
+#define     ZL_HEADVIEW_TEXTCOLOR HEXCOLOR(0xfde103)
+#define     ZL_CELLTITLE_TEXTCOLOR HEXCOLOR(0xfde103)
+#define     ZL_DISABLE_TEXTCOLOR   [UIColor grayColor]//HEXCOLOR(0xfde103)
+
+#define     ZL_TABLEVIEW_LEFTMARGIN  8
+#define     ZL_HOME_TABLEVIEW_HEIGHT       78
+#define     ZL_PRODUCT_CELL_HEIGHT   70
+

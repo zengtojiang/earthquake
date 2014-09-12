@@ -1,0 +1,45 @@
+/* 
+  Localizable.strings
+  EarthQuake
+
+  Created by mac  on 12-12-2.
+  Copyright (c) 2012年 icow. All rights reserved.
+*/
+"HTTP Error"="HTTP Error";
+"No Connection Error"="No Connection Error";
+"Error Title"="Error";
+"Earthquake"="Earthquake Express";
+"OK"="OK";
+"AM"="AM";
+"PM"="PM";
+"MMM d, yyyy, h:mm:ss aaa"="MMM d, yyyy, h:mm:ss aaa";
+"location or size"="Search with location or magnitude";
+"back"="Back";
+"send to sina"="Sina Weibo";
+"send to facebook"="Facebook";
+"please set your account first"="Please set your account in the \"Settings\" first.";
+"address"="Address:";
+"magnitude"="Magnitude:";
+"date"="Time:";
+"link"="Link:";
+"latitude"="Latitude:";
+"longitude"="Longitude:";
+"distribution"="Seismic Maps";
+"newest infos"="Newest Info.";
+"cancel"="Cancel";
+"delete"="Delete";
+"edit"="Edit";
+"concern"="Concern";
+"attention region"="Areas of concern";
+"no annotation yet"="You have not add areas of concern yet, please add an area at first.";
+"set attentions"="Add an area";
+"saved success"="Saved";
+"edit radius"="Set radius of area";
+"10km"="10km";
+"max radius is 300km"="Maximum radius is 300km\n\n\n\n";
+"preview"="Preview";
+"detail"="Detail";
+"magnitude < 4"="magnitude < 4";
+"magnitude 4-7"="magnitude 4-7";
+"magnitude > 7"="magnitude > 7";
+"Map"="Map";

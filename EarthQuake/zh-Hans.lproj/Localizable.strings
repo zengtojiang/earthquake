@@ -1,0 +1,45 @@
+/* 
+  Localizable.strings
+  EarthQuake
+
+  Created by mac  on 12-12-2.
+  Copyright (c) 2012年 icow. All rights reserved.
+*/
+"HTTP Error"="网络错误";
+"No Connection Error"="网络不可用";
+"Error Title"="警告";
+"Earthquake"="地震资讯台";
+"OK"="好";
+"AM"="上午";
+"PM"="下午";
+"MMM d, yyyy, h:mm:ss aaa"="yyyy年M月d日, aaa h:mm:ss";
+"location or size"="搜索地点或震级";
+"back"="返回";
+"send to sina"="新浪微博";
+"send to facebook"="Facebook";
+"please set your account first"="请先在\"设置\"中登录您的账号";
+"address"="地点:";
+"magnitude"="震级:";
+"date"="时间:";
+"link"="链接:";
+"latitude"="纬度:";
+"longitude"="经度:";
+"distribution"="地震分布图";
+"newest infos"="最新情况";
+"cancel"="取消";
+"delete"="删除";
+"edit"="编辑";
+"concern"="关注";
+"attention region"="关注地区";
+"no annotation yet"="您还没有设置关注地区，请先添加关注区域。";
+"set attentions"="设置关注地区";
+"saved success"="保存成功";
+"edit radius"="编辑地区半径";
+"10km"="10公里";
+"max radius is 300km"="最大半径为300公里\n\n\n\n";
+"preview"="预览";
+"detail"="详情";
+"magnitude < 4"="低于4级";
+"magnitude 4-7"="4-7级";
+"magnitude > 7"="强于7级";
+"Map"="地图";
